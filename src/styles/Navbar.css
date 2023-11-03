@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bruno+Ace+SC&family=Darumadrop+One&family=Exo+2:wght@500&family=Francois+One&family=Maven+Pro:wght@500&family=Noto+Sans+JP:wght@500&family=Quicksand:wght@500&family=Signika+Negative:wght@300&family=Tsukimi+Rounded:wght@500&family=Varela+Round&family=Ysabeau:wght@200&display=swap');
+
+.navbar{
+    background: var(--not-white);
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 25vh;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 0;
+}
+.window-active{
+    box-shadow: 0px 2px 3px #1211114d;
+}
+
+.navbar .top-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: var(--padding);
+    height: 25%;
+}
+.navbar .top-menu .link{
+    display: flex;
+    color: grey;
+    gap: .08rem;
+    align-items: center;
+    font-size: 15px;
+}
+.navbar .top-menu .link p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.navbar .top-menu .link i{
+    font-weight: bold;
+}
+
+/* Middle NavLink Begins */
+.navbar .main-menu{
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    align-items: center;
+    padding: .5rem 2.5rem;
+    height: 40%;
+}
+.navbar .main-menu img{
+    width: 135px;
+}
+.main-menu .search-container{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.main-menu .search-container .input-container{
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--not-white);
+    border-radius: 5px;
+    width: 100%;
+    padding: .5rem;
+    gap: .5rem;
+}
+.main-menu .search-container .input-container input{
+    outline: none;
+    border: none;
+    width: 100%;
+}
+.main-menu .search-container button{
+    border: none;
+    background-image: var(--gradient);
+    color: #fff;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-image 2s linear;
+}
+.main-menu .search-container button:hover{
+    background-image: var(--gradient-reverse); 
+}
+
+.navbar .main-menu .links{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+.navbar .main-menu .links .link{
+    display: flex;
+    gap: .1rem;
+    align-items: center;
+    font-weight: 520;
+    color: var(--green);
+    font-family: 'Maven Pro';
+    font-size: 15px;
+}
+
+/* Filter Menu */
+.navbar .filter-menu{
+    display: flex;
+    padding: var(--padding);
+    gap: 1.5rem;
+    align-items: center;
+    height: 35%;
+}
+.navbar .filter-menu .link{
+    display: flex;
+    gap: .3rem;
+    color: var(--green);
+    border: 1px solid #a4a9a4;
+    padding: .5rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 400;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+.link .dropDown-container{
+    position: absolute;
+    background: var(--not-white);
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 2.6rem;
+    border: 1px solid #a4a9a4;
+    padding: .5rem;
+    border-radius: 5px;
+    display: none;
+}
+.link .dropDown-container.dropDown-active{
+    display: block;
+    box-shadow: var(--box-shadow2);
+}
+.link .dropDown-container.dropDown-active p{
+    animation: fadeDown .2s ease-in-out;
+    animation-iteration-count: 1;
+}
+.link .dropDown-container p{
+    padding: .5rem .3rem;
+    font-size: 14px;
+}
+.link .dropDown-container p:hover{
+    margin-left: .3rem;
+    color: var(--green);
+}
+@keyframes fadeDown {
+    from{
+        opacity: .7;
+        margin-top: -.3rem;
+    }to{
+        opacity: 1;
+        margin-top: auto;
+    }   
+}
+
+
+
+
+
+
+

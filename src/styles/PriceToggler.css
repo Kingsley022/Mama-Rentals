@@ -1,0 +1,47 @@
+.price-toggler-container {
+    width: 360px; /* Set the desired width for the container */
+    margin: 20px 0; /* Center the container */
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 2.8rem;
+    display: none;
+    background: white;
+    box-shadow: var(--box-shadow2);
+    
+}
+.togglerActive{
+    display: flex;
+    display: flex;
+    padding: 1rem;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    gap: .3rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Styling the input range */
+.price-toggler-container input{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%; 
+    height: 5px; 
+    background: var(--not-white); 
+    border: none; 
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    left: 0;
+}
+
+/* Styling the toggle (thumb) */
+.price-toggler-container input[type="range"]::-webkit-slider-thumb {
+    appearance: none; 
+    width: 18px;
+    height: 18px;
+    background-color: var(--brown-2);
+    border-radius: 50%;
+    cursor: pointer;
+}

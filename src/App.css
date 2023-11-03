@@ -1,0 +1,36 @@
+:root{
+  --white: #fff;
+  --not-white: #edebeb;
+  --green: #2b3d2d;
+  --brown-1: #9f764b;
+  --brown-2: #b8936c;
+  --light-brown: #f1eee7;
+  --box-shadow:0 0.5rem 0.7rem #3e3d3d;
+  --box-shadow2: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  --border:0.2rem solid #000000;
+  --padding: 24px;
+  --img-gradient:linear-gradient(to bottom, rgba(55, 74, 67, .3), rgb(60, 88, 82, .3));
+  --gradient-reverse: linear-gradient(50deg,#b8936c 20%, #9f764b 50%, #b8936c 70%);
+  --gradient: linear-gradient(90deg, #b8936c 20%, #9f764b 80%);
+  --padding: 1rem 2.5rem;
+
+}
+
+*{
+  font-family: 'poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all .2s linear;
+}
+
+.text-gradient{
+  background: linear-gradient(90deg, #b8936c 20%, #9f764b 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text-reverse-gradient{
+  background: linear-gradient(90deg,#9f764b 80%, #b8936c 20%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

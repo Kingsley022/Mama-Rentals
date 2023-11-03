@@ -1,0 +1,77 @@
+.property{
+    cursor: pointer;
+    padding-bottom: .5rem;
+}
+.property .img-area{
+    position: relative;
+    width: 100%;
+    height: 220px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.property .img-area::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    background: var(--img-gradient);
+    z-index: 1;
+    border-radius: 8px;
+}
+.property .img-area img{
+    display: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.property .img-area .type-n-heart{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .3rem 1rem;
+    font-size: 21px;
+    color: #fff;
+    z-index: 2;
+}
+.property .img-area .type-n-heart p{
+    font-family: 'Courgette', cursive;   
+}
+.property .img-area .active-img{
+    display: block;
+}
+.property .img-area .arrows{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    padding: .3rem 1rem;
+    z-index: 2;
+    opacity: 0;
+}
+.property:hover{
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+.property:hover .arrows{
+    opacity: 1;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.property .img-area .arrows .arrow{
+    background: rgba(1, 23, 16, 0.4);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+    font-size: 15px;
+    border-radius: 50%;
+}
